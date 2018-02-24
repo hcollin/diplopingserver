@@ -28,4 +28,9 @@ public class GameController {
         return gameService.getGameById(id);
     }
 
+    @RequestMapping(value = "/{id]", method = RequestMethod.DELETE)
+    public void deleteGameById(@PathVariable("id") Integer id) {
+
+    }
+
 }
