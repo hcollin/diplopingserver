@@ -18,6 +18,8 @@ public class GameDao {
         games = new HashMap<Integer, Game>() {
             {
                 put(1, new Game("tre-rope", "1111", "1111", "1111", "1111", "1111", "1111", "1111"));
+                put(2, new Game("tre-rope 2", "1111", "1111", "1111", "1111", "1111", "1111", "1111"));
+                put(3, new Game("tre-rope 3", "1111", "1111", "1111", "1111", "1111", "1111", "1111"));
             }
 
         };
@@ -29,6 +31,10 @@ public class GameDao {
 
     public Game getGameById(Integer id) {
         return this.games.get(id);
+    }
+
+    public void addNewGame(Integer id, Game game) {
+
     }
 
 

@@ -20,11 +20,13 @@ public class GameController {
 
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Game> getAllGames() {
+        System.out.print("GET GAMES");
+
         return gameService.getGames();
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Game getGameById(@PathVariable("id") Integer id) {
+    @RequestMapping(value = "/{jeejee}", method = RequestMethod.GET)
+    public Game getGameById(@PathVariable("jeejee") Integer id) {
         return gameService.getGameById(id);
     }
 
@@ -32,5 +34,6 @@ public class GameController {
     public void deleteGameById(@PathVariable("id") Integer id) {
 
     }
+
 
 }
